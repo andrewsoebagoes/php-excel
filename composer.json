@@ -1,0 +1,23 @@
+{
+    "name": "andrew/php-import-excel",
+    "description": "Belajar PHP Import Excel",
+    "autoload": {
+        "psr-4": {
+            "Andrew\\PhpImportExcel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "andrewsoebagoes",
+            "email": "ndrewbagoes@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.29"
+    },
+    "config": {
+        "platform": {
+            "php": "8.1"
+        }
+    }
+}
