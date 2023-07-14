@@ -6,7 +6,7 @@ use PhpOffice\PhpSpreadsheet\IOFactory;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 
 // Membaca file Excel
-$inputFile = 'file/juni 2.xls';
+$inputFile = 'juni 1.xls';
 $spreadsheet = IOFactory::load($inputFile);
 
 // Array untuk menyimpan semua data dari setiap sheet
@@ -77,9 +77,9 @@ foreach ($allData as $data) {
 }
 
 // Menyimpan perubahan ke file Excel baru
-$outputFile = '2.tagihan-juni-2.xls';
+$outputFile = '1.tagihan-juni-1.xls';
 $writer = IOFactory::createWriter($spreadsheetBaru, 'Xls');
 $writer->save($outputFile);
 
-echo "File Excel Tagihan Juni 2 berhasil dibuat dengan data yang digabungkan dari setiap sheet.\n";
+echo "File Excel Tagihan Juni 1 berhasil dibuat dengan data yang digabungkan dari setiap sheet.\n";
 ?>
